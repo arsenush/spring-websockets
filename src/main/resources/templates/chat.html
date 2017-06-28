@@ -14,7 +14,7 @@
     <hr/>
     <div class="row">
         <div id="messages" class="col-xs-12">
-            <p th:each="message : ${messages}" th:text="${message.text}"></p>
+            <p th:each="message : ${messages}" th:text="${message.author} + ': ' + ${message.text}"></p>
         </div>
     </div>
     <hr/>

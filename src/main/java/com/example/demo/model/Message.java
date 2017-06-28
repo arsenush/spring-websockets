@@ -14,6 +14,9 @@ public class Message {
     @GeneratedValue
     private Integer id;
 
+    @Column
+    private String author;
+
     @Column(name = "text")
     private String text;
 }
